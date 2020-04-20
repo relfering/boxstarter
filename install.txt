@@ -1,7 +1,16 @@
+#Install Chocolatey als bootstrap
 Set-ExecutionPolicy Bypass -Scope Process -Force; `
   iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-  
+
+#Install boxstarter
+choco install boxstarter -y
+choco install chocolateygui -y
+
+#Voeg lokale source toe
+choco source add -n=Omroep-West -s="https://chocolatey.omroepwest.nl"
+
+#Enable Remote Desktop en Remote Powershell, werkt alleen in boxstarter
+Enable-RemoteDesktop -Force
 Enable-PSRemoting -Force
 
-choco install boxstarter -y
 
