@@ -17,4 +17,5 @@ choco source add -n=Omroep-West -s="https://chocolatey.omroepwest.nl"
 Enable-RemoteDesktop -Force
 Enable-PSRemoting -Force
 
+#Hieronder de rest
 
