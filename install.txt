@@ -6,6 +6,10 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; `
 choco install boxstarter -y
 choco install chocolateygui -y
 
+#uitschakelen
+#Disable-UAC
+#Disable-MicrosoftUpdate
+
 #Voeg lokale source toe
 choco source add -n=Omroep-West -s="https://chocolatey.omroepwest.nl"
 
