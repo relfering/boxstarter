@@ -18,4 +18,5 @@ Enable-RemoteDesktop -Force
 Enable-PSRemoting -Force
 
 #Hieronder de rest
+#Eerst Excel / Office daarna Exact pas. Advies van Vanessa
 
