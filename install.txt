@@ -11,7 +11,7 @@ choco install chocolateygui -y
 #Disable-MicrosoftUpdate
 
 #Voeg lokale source toe
-choco source add -n=Omroep-West -s="https://chocolatey.omroepwest.nl"
+choco source add -n=Omroep-West -s="https://chocolatey.omroepwest.nl/chocolatey"
 
 #Enable Remote Desktop en Remote Powershell, werkt alleen in boxstarter
 Enable-RemoteDesktop -Force
