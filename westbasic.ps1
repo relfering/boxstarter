@@ -40,8 +40,8 @@ function executeScript {
 #Update-SessionEnvironment #refreshing env due to Git install
 
 #--- Enable Remote Desktop en Remote Powershell, werkt alleen in boxstarter ---
-Enable-RemoteDesktop -Force
-Enable-PSRemoting -Force
+#Enable-RemoteDesktop -Force
+#Enable-PSRemoting -Force
 
 #--- Voeg Lokale Source Toe ---
 #choco source add -n=Omroep-West -s="https://chocolatey.omroepwest.nl/chocolatey"
