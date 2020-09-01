@@ -43,10 +43,13 @@ function executeScript {
 #choco source add -n=Omroep-West -s="https://chocolatey.omroepwest.nl/chocolatey"
 
 #--- UWP Workload and installing Windows Template Studio ---
+choco install chocolatey
+choco install boxstarter
 choco install filezilla -y
 choco install notepadplusplus -y
 choco install microsoft-edge -y
 choco install irfanview -y
+choco install chocolateygui -y
 
 #--- Enable Remote Desktop en Remote Powershell, werkt alleen in boxstarter ---
 Enable-RemoteDesktop -Force
