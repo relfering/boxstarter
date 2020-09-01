@@ -1,5 +1,5 @@
 # boxstarter
-Boxstarter scripts voor deployment
+Boxstarter scripts voor deployment.
 
 Zet Wifi op private.
 
