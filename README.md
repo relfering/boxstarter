@@ -7,6 +7,9 @@ Werkt alleen in de oude Edge en Internet Explorer zonder oneclick installers. Is
 Toch via Edge Chromium doen...cmdstartzet dan edge://flags/#edge-click-once aan.
 
 http://boxstarter.org/package/url?https://raw.githubusercontent.com/relfering/boxstarter/master/westbasic.ps1
+of no reboot optie /nr
+http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/relfering/boxstarter/master/westbasic.ps1
+
 
 Install-BoxstarterPackage -PackageName https://raw.githubusercontent.com/relfering/boxstarter/master/install.txt -DisableReboots
 
