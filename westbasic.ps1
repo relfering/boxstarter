@@ -39,10 +39,6 @@ function executeScript {
 #choco install -y visualstudio2017community --package-parameters="'--add Microsoft.VisualStudio.Component.Git'"
 #Update-SessionEnvironment #refreshing env due to Git install
 
-#--- Enable Remote Desktop en Remote Powershell, werkt alleen in boxstarter ---
-#Enable-RemoteDesktop -Force
-#Enable-PSRemoting -Force
-
 #--- Voeg Lokale Source Toe ---
 #choco source add -n=Omroep-West -s="https://chocolatey.omroepwest.nl/chocolatey"
 
@@ -51,6 +47,10 @@ choco install filezilla -y
 choco install notepadplusplus -y
 choco install microsoft-edge -y
 choco install irfanview -y
+
+#--- Enable Remote Desktop en Remote Powershell, werkt alleen in boxstarter ---
+Enable-RemoteDesktop -Force
+Enable-PSRemoting -Force
 
 #executeScript "WindowsTemplateStudio.ps1";
 #executeScript "GetUwpSamplesOffGithub.ps1";
