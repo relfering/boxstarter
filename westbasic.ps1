@@ -43,6 +43,7 @@ function executeScript {
 choco install filezilla -y
 choco install notepadplusplus -y
 choco install microsoft-edge -y
+choco install irfanview
 
 #executeScript "WindowsTemplateStudio.ps1";
 #executeScript "GetUwpSamplesOffGithub.ps1";
