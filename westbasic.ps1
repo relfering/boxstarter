@@ -3,6 +3,7 @@
 # Common settings for West desktop app development
 
 Disable-UAC
+Disable-MicrosoftUpdate
 
 # Get the base URI path from the ScriptToCall value
 $bstrappackage = "-bootstrapPackage"
