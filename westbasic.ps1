@@ -43,8 +43,8 @@ function executeScript {
 choco source add -n=Omroep-West -s="https://chocolatey.omroepwest.nl/chocolatey"
 
 #--- UWP Workload and installing Windows Template Studio ---
-choco install chocolatey
-choco install boxstarter
+choco install chocolatey -y
+choco install boxstarter -y
 choco install filezilla -y
 choco install notepadplusplus -y
 choco install microsoft-edge -y
