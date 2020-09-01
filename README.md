@@ -15,7 +15,7 @@ Of met de noreboot optie aka /nr
 
 http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/relfering/boxstarter/master/westbasic.ps1
 
-
+Alternatiece opties via Boxstarter shell:
 Install-BoxstarterPackage -PackageName https://raw.githubusercontent.com/relfering/boxstarter/master/install.txt -DisableReboots
 
 Install-BoxstarterPackage -PackageName https://raw.githubusercontent.com/relfering/boxstarter/master/install.txt?token=AOQODCP72M427Y3NHI4EINK7CBGVA -DisableReboots
