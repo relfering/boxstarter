@@ -3,7 +3,6 @@
 # Common settings for West desktop app development
 
 Disable-UAC
-Disable-MicrosoftUpdate
 
 # Get the base URI path from the ScriptToCall value
 $bstrappackage = "-bootstrapPackage"
@@ -51,7 +50,7 @@ Enable-PSRemoting -Force
 choco install filezilla -y
 choco install notepadplusplus -y
 choco install microsoft-edge -y
-choco install irfanview
+choco install irfanview -y
 
 #executeScript "WindowsTemplateStudio.ps1";
 #executeScript "GetUwpSamplesOffGithub.ps1";
