@@ -57,6 +57,9 @@ choco install firefox -y
 Enable-RemoteDesktop -Force
 Enable-PSRemoting -Force
 
+#--- Remove Microsoft Packages ---
+Get-AppxPackage *Microsoft.549981C3F5F10* | Remove-AppxPackage
+
 #executeScript "WindowsTemplateStudio.ps1";
 #executeScript "GetUwpSamplesOffGithub.ps1";
 
