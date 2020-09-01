@@ -50,6 +50,8 @@ choco install notepadplusplus -y
 choco install microsoft-edge -y
 choco install irfanview -y
 choco install chocolateygui -y
+choco install googlechrome -y
+choco install firefox -y
 
 #--- Enable Remote Desktop en Remote Powershell, werkt alleen in boxstarter ---
 Enable-RemoteDesktop -Force
