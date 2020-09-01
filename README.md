@@ -8,7 +8,8 @@ Werkt alleen in de oude Edge en Internet Explorer zonder oneclick installers. Is
 Toch via Edge Chromium doen...zet dan edge://flags/#edge-click-once aan.
 
 http://boxstarter.org/package/url?https://raw.githubusercontent.com/relfering/boxstarter/master/westbasic.ps1
-of no reboot optie /nr
+
+Of met de noreboot optie aka /nr
 
 http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/relfering/boxstarter/master/westbasic.ps1
 
