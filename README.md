@@ -1,6 +1,8 @@
 # boxstarter
 Boxstarter scripts voor deployment
 
+Zet Wifi op private. Werkt alleen in de oude Edge en Internet Explorer zonder oneclick installers. Is eigenlijk triple click.
+
 http://boxstarter.org/package/url?https://raw.githubusercontent.com/relfering/boxstarter/master/westbasic.ps1
 
 Install-BoxstarterPackage -PackageName https://raw.githubusercontent.com/relfering/boxstarter/master/install.txt -DisableReboots
