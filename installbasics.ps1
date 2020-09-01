@@ -13,9 +13,10 @@ Enable-PSRemoting -Force
 #--- Voeg Lokale Source Toe ---
 #choco source add -n=Omroep-West -s="https://chocolatey.omroepwest.nl/chocolatey"
 
-#--- Installaleer Generieke Software ---
+#--- Installaleer Generieke Software van Public Repository---
 choco install chocolateygui -y
 choco install filezilla -y
+choco install notepadplusplus -y
 
 #--- Installeer Bedrijfs Software ---
 #Eerst Excel / Office daarna Exact pas. Advies van Vanessa
