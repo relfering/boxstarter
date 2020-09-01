@@ -17,6 +17,7 @@ Enable-PSRemoting -Force
 choco install chocolateygui -y
 choco install filezilla -y
 choco install notepadplusplus -y
+choco install microsoft-edge -y
 
 #--- Installeer Bedrijfs Software ---
 #Eerst Excel / Office daarna Exact pas. Advies van Vanessa
