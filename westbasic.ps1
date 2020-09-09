@@ -40,7 +40,7 @@ function executeScript {
 #Update-SessionEnvironment #refreshing env due to Git install
 
 #--- Voeg Lokale Source Toe ---
-choco source add -n=Omroep-West -s="https://chocolatey.omroepwest.nl/chocolatey"
+choco source add -n=Omroep-West -s="http://packageserver.omroep.local/chocolatey"
 
 #--- UWP Workload and installing Windows Template Studio ---
 choco install chocolatey -y
