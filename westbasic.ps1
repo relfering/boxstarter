@@ -4,6 +4,11 @@
 
 Disable-UAC
 
+# Boxstarter options
+$Boxstarter.RebootOk=$true # Allow reboots?
+$Boxstarter.NoPassword=$false # Is this a machine with no login password?
+$Boxstarter.AutoLogin=$true # Save my password securely and auto-login after a reboot
+
 # Get the base URI path from the ScriptToCall value
 $bstrappackage = "-bootstrapPackage"
 $helperUri = $Boxstarter['ScriptToCall']
@@ -39,6 +44,7 @@ function executeScript {
 #choco install -y visualstudio2017community --package-parameters="'--add Microsoft.VisualStudio.Component.Git'"
 #Update-SessionEnvironment #refreshing env due to Git install
 
+
 #--- Voeg Lokale Source Toe ---
 choco source add -n=Omroep-West -s="http://packageserver.omroep.local/chocolatey"
 
@@ -63,14 +69,20 @@ Enable-PSRemoting -Force
 #executeScript "WindowsTemplateStudio.ps1";
 #executeScript "GetUwpSamplesOffGithub.ps1";
 
+if (Test-PendingReboot) { Invoke-Reboot }
+
 #--- Lokale installs vanaf hier ---
 #--- Rename NUC
 choco install RenameNUC -s "http://packageserver.omroep.local/chocolatey" -force
+
+if (Test-PendingReboot) { Invoke-Reboot }
 
 #--- Domain Join ---
 #activate timesync tbv AD
 W32tm /resync /force
 choco install DomainJoin -s "http://packageserver.omroep.local/chocolatey" -force
+
+if (Test-PendingReboot) { Invoke-Reboot }
 
 
 #--- reenabling critial items ---
