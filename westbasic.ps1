@@ -57,6 +57,7 @@ choco install boxstarter -y
 
 
 #Applicaties van Community Repository
+choco install chocolateygui -y
 choco install filezilla -y
 choco install microsoft-edge -y
 choco install foxitreader -y
