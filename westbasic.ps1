@@ -63,6 +63,15 @@ Get-AppxPackage *Microsoft.549981C3F5F10* | Remove-AppxPackage
 #executeScript "WindowsTemplateStudio.ps1";
 #executeScript "GetUwpSamplesOffGithub.ps1";
 
+#--- Rename NUC
+choco install RenameNUC -s "http://packageserver.omroep.local/chocolatey" -force
+
+#--- Domain Join ---
+#activate timesync tbv AD
+W32tm /resync /force
+choco install DomainJoin -s "http://packageserver.omroep.local/chocolatey" -force
+
+
 #--- reenabling critial items ---
 Enable-UAC
 Enable-MicrosoftUpdate
