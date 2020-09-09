@@ -85,6 +85,7 @@ choco install camstudio -y
 choco install audacity-lame -y
 choco install audacity-ffmpeg -y
 #hieronder de dotnet installatie die nodig is voor Exact Globe
+choco install dogtail.dotnet3.5sp1 -y
 choco install dotnet4.7.1 -y
 #hieronder javaruntime 8 installatie voor bv Incite
 choco install javaruntime -y
