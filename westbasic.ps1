@@ -44,8 +44,9 @@ function executeScript {
 #choco install -y visualstudio2017community --package-parameters="'--add Microsoft.VisualStudio.Component.Git'"
 #Update-SessionEnvironment #refreshing env due to Git install
 
-Install-WindowsUpdate -acceptEula
-if (Test-PendingReboot) { Invoke-Reboot }
+#Forceer Windows updates, moet eigenlijk in het image al zitten.
+#Install-WindowsUpdate -acceptEula
+#if (Test-PendingReboot) { Invoke-Reboot }
 
 #--- Voeg Lokale Source Toe ---
 choco source add -n=Omroep-West -s="http://packageserver.omroep.local/chocolatey"
