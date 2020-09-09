@@ -42,7 +42,7 @@ function executeScript {
 #--- Voeg Lokale Source Toe ---
 choco source add -n=Omroep-West -s="http://packageserver.omroep.local/chocolatey"
 
-#--- UWP Workload and installing Windows Template Studio ---
+#--- Internet Installs vanaf hier ---
 choco install chocolatey -y
 choco install boxstarter -y
 choco install filezilla -y
@@ -58,11 +58,12 @@ Enable-RemoteDesktop -Force
 Enable-PSRemoting -Force
 
 #--- Remove Microsoft Packages ---
-Get-AppxPackage *Microsoft.549981C3F5F10* | Remove-AppxPackage
+#Get-AppxPackage *Microsoft.549981C3F5F10* | Remove-AppxPackage
 
 #executeScript "WindowsTemplateStudio.ps1";
 #executeScript "GetUwpSamplesOffGithub.ps1";
 
+#--- Lokale installs vanaf hier ---
 #--- Rename NUC
 choco install RenameNUC -s "http://packageserver.omroep.local/chocolatey" -force
 
