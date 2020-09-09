@@ -90,14 +90,14 @@ choco install dotnet4.7.1 -y
 choco install javaruntime -y
 
 #--- Company installaties
-choco install vfwcodecs_20 -y --allow-empty-checksums
-choco install adobephotoshopelements10 -y
-choco install wacomtablet -y
-choco install Audacity-2-2-2-211-GMLversion -y
-choco install AstiumSwitchBoard-21-21961 -y
-choco install AudinateDanteDVS -y
-choco install MicrosoftOffice2019 -y
-choco install ExactGlobeNextInstallOnly -y
+choco install vfwcodecs_20 -s "http://packageserver.omroep.local/chocolatey" -y --allow-empty-checksums
+choco install adobephotoshopelements10 -s "http://packageserver.omroep.local/chocolatey" -y
+choco install wacomtablet -s "http://packageserver.omroep.local/chocolatey" -y
+choco install Audacity-2-2-2-211-GMLversion -s "http://packageserver.omroep.local/chocolatey" -y
+choco install AstiumSwitchBoard-21-21961 -s "http://packageserver.omroep.local/chocolatey" -y
+choco install AudinateDanteDVS -s "http://packageserver.omroep.local/chocolatey" -y
+choco install MicrosoftOffice2019 -s "http://packageserver.omroep.local/chocolatey" -y
+choco install ExactGlobeNextInstallOnly -s "http://packageserver.omroep.local/chocolatey" -y
 
 
 #--- Enable Remote Desktop en Remote Powershell, werkt alleen in boxstarter ---
@@ -114,14 +114,14 @@ if (Test-PendingReboot) { Invoke-Reboot }
 
 #--- Lokale installs vanaf hier ---
 #--- Rename NUC
-choco install RenameNUC -s "http://packageserver.omroep.local/chocolatey" -force
+choco install RenameNUC -s "http://packageserver.omroep.local/chocolatey" -y
 
 if (Test-PendingReboot) { Invoke-Reboot }
 
 #--- Domain Join ---
 #activate timesync tbv AD
 W32tm /resync /force
-choco install DomainJoin -s "http://packageserver.omroep.local/chocolatey" -force
+choco install DomainJoin -s "http://packageserver.omroep.local/chocolatey" -y
 
 if (Test-PendingReboot) { Invoke-Reboot }
 
