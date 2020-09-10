@@ -57,31 +57,31 @@ choco install boxstarter -y
 
 
 #Applicaties van Community Repository
-choco install chocolateygui -y
-choco install filezilla -y
-choco install microsoft-edge -y
-choco install foxitreader -y
-choco install keepass -y
-choco install firefox -y
-choco install notepadplusplus -y
-choco install quicktime -y
-choco install slack -y
-choco install spotify -y
-choco install vlc -y
-choco install winrar -y
-choco install 4k-video-downloader -y
-choco install googlechrome --ignore-checksums -y
-choco install irfanview -y
-choco install irfanviewplugins -y
-choco install 7zip -y
-choco install obs -y
-choco install tightvnc -y
-choco install windirstat -y
-choco install winscp -y
-choco install gimp -y
-choco install putty -y
-choco install paint.net -y
-choco install camstudio -y
+#choco install chocolateygui -y
+#choco install filezilla -y
+#choco install microsoft-edge -y
+#choco install foxitreader -y
+#choco install keepass -y
+#choco install firefox -y
+#choco install notepadplusplus -y
+#choco install quicktime -y
+#choco install slack -y
+#choco install spotify -y
+#choco install vlc -y
+#choco install winrar -y
+#choco install 4k-video-downloader -y
+#choco install googlechrome --ignore-checksums -y
+#choco install irfanview -y
+#choco install irfanviewplugins -y
+#choco install 7zip -y
+#choco install obs -y
+#choco install tightvnc -y
+#choco install windirstat -y
+#choco install winscp -y
+#choco install gimp -y
+#choco install putty -y
+#choco install paint.net -y
+#choco install camstudio -y
 #hieronder alvast de installatie van de codecs tbv de custom GML Audacity
 choco install audacity-lame -y
 choco install audacity-ffmpeg -y
@@ -90,6 +90,10 @@ choco install dogtail.dotnet3.5sp1 -y
 choco install dotnet4.7.1 -y
 #hieronder javaruntime 8 installatie voor bv Incite
 choco install javaruntime -y
+
+#--- Enable Remote Desktop en Remote Powershell, werkt alleen in boxstarter ---
+Enable-RemoteDesktop -Force
+Enable-PSRemoting -SkipNetorkProfileCheck -Force
 
 #--- Company installaties
 choco install vfwcodecs_20 -s "http://packageserver.omroep.local/chocolatey" -y --allow-empty-checksums
@@ -102,9 +106,7 @@ choco install MicrosoftOffice2019 -s "http://packageserver.omroep.local/chocolat
 choco install ExactGlobeNextInstallOnly -s "http://packageserver.omroep.local/chocolatey" -y
 
 
-#--- Enable Remote Desktop en Remote Powershell, werkt alleen in boxstarter ---
-Enable-RemoteDesktop -Force
-Enable-PSRemoting -SkipNetorkProfileCheck -Force
+
 
 #--- Remove Microsoft Packages ---
 #Get-AppxPackage *Microsoft.549981C3F5F10* | Remove-AppxPackage
