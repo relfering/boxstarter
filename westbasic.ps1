@@ -98,6 +98,7 @@ Enable-PSRemoting -SkipNetworkProfileCheck -Force
 
 #--- Company installaties ---
 #Zet NLD en Keyboard op Verenigde staten voor vfwcodecs.
+Set-WinUserLanguageList -LanguageList nl-NL -Force
 choco install vfwcodecs_20 -s "http://packageserver.omroep.local/chocolatey" -y --allow-empty-checksums
 choco install adobephotoshopelements10 -s "http://packageserver.omroep.local/chocolatey" -y
 choco install wacomtablet -s "http://packageserver.omroep.local/chocolatey" -y
