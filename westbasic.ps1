@@ -104,7 +104,7 @@ choco install ExactGlobeNextInstallOnly -s "http://packageserver.omroep.local/ch
 
 #--- Enable Remote Desktop en Remote Powershell, werkt alleen in boxstarter ---
 Enable-RemoteDesktop -Force
-Enable-PSRemoting -Force
+Enable-PSRemoting -SkipNetorkProfileCheck -Force
 
 #--- Remove Microsoft Packages ---
 #Get-AppxPackage *Microsoft.549981C3F5F10* | Remove-AppxPackage
