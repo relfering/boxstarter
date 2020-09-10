@@ -93,7 +93,7 @@ choco install javaruntime -y
 
 #--- Enable Remote Desktop en Remote Powershell, werkt alleen in boxstarter ---
 Enable-RemoteDesktop -Force
-Enable-PSRemoting -SkipNetorkProfileCheck -Force
+Enable-PSRemoting -SkipNetworkProfileCheck -Force
 
 #--- Company installaties
 choco install vfwcodecs_20 -s "http://packageserver.omroep.local/chocolatey" -y --allow-empty-checksums
