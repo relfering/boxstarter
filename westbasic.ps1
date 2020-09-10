@@ -89,19 +89,23 @@ choco install audacity-ffmpeg -y
 choco install dogtail.dotnet3.5sp1 -y
 choco install dotnet4.7.1 -y
 #hieronder javaruntime 8 installatie voor bv Incite
+#ff Ivan vragen over 32b of 64b versie
 choco install javaruntime -y
 
 #--- Enable Remote Desktop en Remote Powershell, werkt alleen in boxstarter ---
 Enable-RemoteDesktop -Force
 Enable-PSRemoting -SkipNetworkProfileCheck -Force
 
-#--- Company installaties
+#--- Company installaties ---
+#Zet NLD en Keyboard op Verenigde staten voor vfwcodecs.
 choco install vfwcodecs_20 -s "http://packageserver.omroep.local/chocolatey" -y --allow-empty-checksums
 choco install adobephotoshopelements10 -s "http://packageserver.omroep.local/chocolatey" -y
 choco install wacomtablet -s "http://packageserver.omroep.local/chocolatey" -y
 choco install Audacity-2-2-2-211-GMLversion -s "http://packageserver.omroep.local/chocolatey" -y
 choco install AstiumSwitchBoard-21-21961 -s "http://packageserver.omroep.local/chocolatey" -y
-choco install AudinateDanteDVS -s "http://packageserver.omroep.local/chocolatey" -y
+#vanaf hier fout. Audinate driver install doet geen respons en wil rebooten.
+#choco install AudinateDanteDVS -s "http://packageserver.omroep.local/chocolatey" -y
+#Office gaat te snel. Die moet wachten tot install klaar is... omdat anders Exact de mist in gaat.
 choco install MicrosoftOffice2019 -s "http://packageserver.omroep.local/chocolatey" -y
 choco install ExactGlobeNextInstallOnly -s "http://packageserver.omroep.local/chocolatey" -y
 
