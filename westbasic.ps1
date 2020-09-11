@@ -88,9 +88,10 @@ choco install audacity-ffmpeg -y
 #hieronder de dotnet installatie die nodig is voor Exact Globe
 choco install dogtail.dotnet3.5sp1 -y
 choco install dotnet4.7.1 -y
-#hieronder javaruntime 8 installatie voor bv Incite
+#hieronder javaruntime 8 en vcredist2010 installatie voor bv Incite
 #ff Ivan vragen over 32b of 64b versie
 choco install javaruntime -y
+choco install vcredist2010
 
 #--- Enable Remote Desktop en Remote Powershell, werkt alleen in boxstarter ---
 Enable-RemoteDesktop -Force
