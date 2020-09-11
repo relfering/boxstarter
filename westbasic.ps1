@@ -108,7 +108,7 @@ Set-WinUserLanguageList -LanguageList nl-NL -Force
 #vanaf hier fout. Audinate driver install doet geen respons en wil rebooten.
 #choco install AudinateDanteDVS -s "http://packageserver.omroep.local/chocolatey" -y
 #choco install ExactGlobeNextInstallOnly -s "http://packageserver.omroep.local/chocolatey" -y
-#choco install vfwcodecs_20 -s "http://packageserver.omroep.local/chocolatey" -y --allow-empty-checksums
+choco install vfwcodecs_20 -s "http://packageserver.omroep.local/chocolatey" -y --allow-empty-checksums
 
 
 
