@@ -47,6 +47,7 @@ Enable-PSRemoting -SkipNetworkProfileCheck -Force
 #Zet NLD en Keyboard op Verenigde staten voor vfwcodecs.
 Set-WinUserLanguageList -LanguageList nl-NL -Force
 choco install vfwcodecs_20 -s "http://packageserver.omroep.local/chocolatey" -y --allow-empty-checksums
+choco install ImcInciteInscriber -s "http://packageserver.omroep.local/chocolatey" -y --allow-empty-checksums 
 
 
 
